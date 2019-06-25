@@ -5,6 +5,7 @@ import { VideoListComponent } from "./video-list/video-list.component";
 import { StatFiltersComponent } from "./stat-filters/stat-filters.component";
 import { RouterModule, Routes } from "@angular/router";
 import { VideoPlayerComponent } from "./video-player/video-player.component";
+import { VideoThumbnailComponent } from './video-thumbnail/video-thumbnail.component';
 
 const childRoutes: Routes = [{ path: "", component: VideoDashboardComponent }];
 
@@ -13,7 +14,8 @@ const childRoutes: Routes = [{ path: "", component: VideoDashboardComponent }];
     VideoDashboardComponent,
     VideoListComponent,
     StatFiltersComponent,
-    VideoPlayerComponent
+    VideoPlayerComponent,
+    VideoThumbnailComponent
   ],
   imports: [CommonModule, RouterModule.forChild(childRoutes)]
 })

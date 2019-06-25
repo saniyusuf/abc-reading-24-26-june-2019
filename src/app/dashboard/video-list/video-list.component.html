@@ -3,6 +3,6 @@
     (click)="setSelectedVideo(video)"
     [class.selected]="selectedVideo?.id === video.id"
     *ngFor="let video of videoList">
-    {{video.title}} : {{video.author}}
+    <app-video-thumbnail [singleVideo]="video"></app-video-thumbnail>
   </li>
 </ul>
